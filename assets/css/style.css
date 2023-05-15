@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-/* brand color palette */
 :root {
   --primary: rgba(68, 88, 119, 1);
   --secondary: rgba(146, 204, 206, 1);
@@ -61,12 +60,10 @@ header nav a{
   padding: 5px;
   text-decoration: none;
   font-size: 1.3rem;
-  /*font-style: normal;*/
   background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
   background-repeat: no-repeat;
   background-size: 150% 0.2em;
   background-position: bottom;
-  /*transition: all 0.25s ease-in;*/
   margin: 0 1.0rem 0.1rem;
   display: inline-block;
 }
@@ -135,16 +132,7 @@ main {
 .about p {
   color: var(--tertiary);
   padding: 5px;
-  /*text-decoration: none;*/
   font-size: 1.3rem;
-  /*font-style: normal;
-  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: bottom;
-  transition: all 0.25s ease-in;
-  margin: 0 0.2rem 0.1rem;
-  display: inline-block;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -158,9 +146,7 @@ main {
   flex: 1 0 200px;
   padding: 10px;
   text-align: center;
- /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;*/
+
 }
 
 .work2 {
@@ -170,9 +156,9 @@ main {
   padding: 10px;
   text-align: center;
   flex-wrap: wrap;
- /* display: flex;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;*/
+  justify-content: space-around;
 }
 
 .work h3 {
@@ -200,6 +186,7 @@ main {
   border-width: 5px;
   border-color: var(--secondary);
   transition: .5s ease;
+  margin: 3px;
 }
 
 
@@ -218,13 +205,17 @@ main {
   border-style: solid var(--dark);
   border-color: var(--secondary);
   max-width: 50%;
+  flex-wrap: wrap;
+}
+
+.card2:hover .work-image {
+  opacity: 0.3;
 }
 
 .textbox {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  /*background-color: black;*/
   color: white;
   padding-left: 20px;
   padding-right: 20px;
