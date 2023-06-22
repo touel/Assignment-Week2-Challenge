@@ -213,7 +213,7 @@ main {
 }
 
 .textbox {
-  position: absolute;
+  position: relative;
   bottom: 20px;
   right: 20px;
   color: white;
